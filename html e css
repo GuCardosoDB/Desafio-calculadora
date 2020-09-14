@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+        body{
+            text-align: center;
+            margin-top: 6%;
+        }
+        section{
+            background-color: #BA8A50;
+            margin-left: 35%;
+            margin-right: 35%;
+        }
+        h1{
+            background-color: #AFC4AF;
+            color:#0B3743;
+            padding: 20px;
+        }
+        #botao{
+            margin: 10px;
+            width: 50px;
+            height: 50px;
+            color: #0B3743;
+            background-color: #AFC4AF;
+        }
+        #visor{
+            width: 75%;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Calculadora</h1>
+        <br>
+        <input type="text" id="visor">
+        <br><br>
+        <input type="button" id="botao" value="1" onclick="numero(1)">
+        <input type="button" id="botao" value="2" onclick="numero(2)">
+        <input type="button" id="botao" value="3" onclick="numero(3)">
+        <input type="button" id="botao" value="/" onclick="numero('/')">
+        <br><br>
+        <input type="button" id="botao" value="4" onclick="numero(4)">
+        <input type="button" id="botao" value="5" onclick="numero(5)">
+        <input type="button" id="botao" value="6" onclick="numero(6)">
+        <input type="button" id="botao" value="*" onclick="numero('*')">
+        <br><br>
+        <input type="button" id="botao" value="7" onclick="numero(7)">
+        <input type="button" id="botao" value="8" onclick="numero(8)">
+        <input type="button" id="botao" value="9" onclick="numero(9)">
+        <input type="button" id="botao" value="+" onclick="numero('+')">
+        <br><br>
+        <input type="button" id="botao" value="0" onclick="numero(0)">
+        <input type="button" id="botao" value="=" onclick="conta()">
+        <input type="button" id="botao" value="C" onclick="limpar()">
+        <input type="button" id="botao" value="-" onclick="numero('-')">
+        <script src="calcu.js"></script>
+    </section>
+</body>
+</html>
